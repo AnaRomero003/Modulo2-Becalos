@@ -1,0 +1,79 @@
+/*Selector universal*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Selectores de tipo etiqueta*/
+body{
+    background-color: rgba(22, 22, 85, 0.771);
+}
+
+main{
+    /*Ajustar las tarjetas a varias lineas*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    color: rgb(80, 7, 7);
+    text-align: center;
+}
+
+/*Selectores de tipo clase*/
+.tarjeta{
+    background-color: darkgoldenrod;
+    width: 330px;
+    border-radius: 3%;
+    text-align: center;
+    /*Centrando elementos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    transition: all 0.4s ease-in-out;/*Transicion suave*/
+}
+
+/*Pseudoclase Hover para crear animaciones*/
+.tarjeta:hover{
+    background-color: cadetblue;
+    transform: scale(1.05);
+    transform: rotate(-2deg);
+}
+
+.tarjeta .caja-contenedora{
+    width: 200px;
+}
+
+.tarjeta img{
+    width: 90%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.tarjeta p{
+    font-size: 15px;
+}
+
+/*Selectores de tipo: ID*/
+#got{
+    color: rgb(27, 36, 92);
+}
+
+#percy{
+    color: crimson;
+}
+
+#divergente{
+    color: rgb(61, 26, 95);
+}
+
+#sinsajo{
+    color: darkblue;
+}
+
+#tog{
+    color: beige;
+}
